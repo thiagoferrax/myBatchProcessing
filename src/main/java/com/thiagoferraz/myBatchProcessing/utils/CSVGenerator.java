@@ -11,7 +11,7 @@ public class CSVGenerator {
     private static final String[] ADDITIONAL_INFO = {"Payment for services rendered", "Payment for product purchase", "Payment for monthly subscription", "Payment for consultation"};
 
     public static void main(String[] args) {
-        String csvFile = "payments.csv";
+        String csvFile = "src/main/resources/payments.csv";
         int numOfRecords = 1000;
 
         try (FileWriter writer = new FileWriter(csvFile)) {
