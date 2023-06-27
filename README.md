@@ -20,7 +20,6 @@ myBatchProcessing is a batch processing application that reads payment data from
 ├── LICENSE
 ├── mvnw
 ├── mvnw.cmd
-├── payments.csv
 ├── pom.xml
 ├── README.md
 └── src
@@ -30,6 +29,8 @@ myBatchProcessing is a batch processing application that reads payment data from
     │   │       └── thiagoferraz
     │   │           └── myBatchProcessing
     │   │               ├── configurations
+    │   │               │   ├── BatchConfiguration.java
+    │   │               │   └── PaymentProcessor.java
     │   │               ├── controllers
     │   │               │   └── PaymentController.java
     │   │               ├── entities
@@ -40,7 +41,8 @@ myBatchProcessing is a batch processing application that reads payment data from
     │   │               └── utils
     │   │                   └── CSVGenerator.java
     │   └── resources
-    │       └── application.properties
+    │       ├── application.properties
+    │       └── payments.csv
     └── test
         └── java
             └── com
@@ -50,7 +52,7 @@ myBatchProcessing is a batch processing application that reads payment data from
 
 #### Tech stack
 
-* [Spring Batch](https://spring.io/projects/spring-batch) for processing large volumes of records, including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource management.
+* [Spring Batch](https://spring.io/projects/spring-batch) for processing large volumes of records.
 * [Spring Boot](http://spring.io/projects/spring-boot) for creating the RESTful Web Services
 * [MockMVC](https://spring.io/guides/gs/testing-web/) for testing the Web Layer
 * [Mockito](https://site.mockito.org/) for testing the Services Layer
